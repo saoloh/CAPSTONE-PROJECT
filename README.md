@@ -1,16 +1,84 @@
-# React + Vite
+# Meta Frontend Track Capstone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a capstone submission for the Meta Frontend Track on Coursera. It is built using React and Vite, showcasing key frontend development skills acquired throughout the course.
 
-Currently, two official plugins are available:
+## Project Description
+[Provide a brief description of your project here. What does it do? What problem does it solve? What features does it have? This is your chance to highlight the unique aspects of your capstone.]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+*   **React**: A JavaScript library for building user interfaces.
+*   **Vite**: A fast frontend build tool that provides an excellent developer experience.
+*   **ESLint**: For maintaining code quality and consistency.
+*   [Add any other libraries, frameworks, or tools you used, e.g., React Router, Redux, Tailwind CSS, etc.]
 
-## React Compiler
+## Features
+*   [List key features of your application, e.g., "User authentication", "Dynamic content rendering", "Interactive UI components", "API integration", etc.]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup and Installation
 
-## Expanding the ESLint configuration
+To get this project up and running on your local machine, follow these steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+*   Node.js (LTS version recommended)
+*   npm or yarn
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-repository-name.git
+    cd your-repository-name
+    ```
+    (Remember to replace `your-username/your-repository-name.git` with your actual repository URL)
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+### Running the Project
+
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+This will typically start the application on `http://localhost:5173` (or another port if 5173 is in use).
+
+### Building for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+This will compile and optimize your application into the `dist/` directory.
+
+## Linting
+
+To run ESLint and check for code quality issues:
+
+```bash
+npm run lint
+# or
+yarn lint
+```
+
+## Learn More
+
+*   [React Documentation](https://react.dev/)
+*   [Vite Documentation](https://vitejs.dev/)
+*   [Coursera Meta Frontend Track](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+*   [ESLint Documentation](https://eslint.org/)
+
+---
+
+Made with ❤️ for the Meta Frontend Track Capstone Project.
