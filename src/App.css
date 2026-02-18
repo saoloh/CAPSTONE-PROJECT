@@ -1,42 +1,160 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Markazi+Text:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #495E57;
+  --secondary-color: #F4CE14;
+  --light-gray: #EDEFEE;
+  --dark-gray: #333333;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 83vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.card {
-  padding: 2em;
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-weight: 700;
 }
 
-.read-the-docs {
-  color: #888;
+.hero {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  width: 83vw;
+}
+
+.hero h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 64px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: var(--secondary-color);
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero img {
+  width: 375px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+#menu {
+  padding: 40px 10%;
+  width: 83vw;
+}
+
+#menu h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: var(--light-gray);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu-item p {
+  padding: 0 10px;
+  color: var(--dark-gray);
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px;
+  font-weight: 700;
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--dark-gray);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 10%;
+  width: 83vw;
+}
+
+footer h3 {
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
 }
