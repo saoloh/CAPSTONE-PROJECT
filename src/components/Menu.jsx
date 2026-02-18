@@ -3,6 +3,9 @@ import greekSaladImage from '../assets/images/08c5772c481233a30a46aeca5521320536
 import bruchettaImage from '../assets/images/3ca412176fe4306326b04a78b51fa148c49f99c1.png';
 import lemonDessertImage from '../assets/images/b64f988f077b50ffdab0afee9de4d701e4a9d5da.png';
 
+/**
+ * Menu item data structure definition.
+ */
 const menuItems = [
   {
     name: 'Greek Salad',
@@ -24,19 +27,25 @@ const menuItems = [
   }
 ];
 
+/**
+ * Menu component that displays a list of the restaurant's weekly specials.
+ * Uses grid layout for cards and includes a call to action for the online menu.
+ */
 const Menu = () => {
   return (
-    <section id="menu">
-      <h2>This week's specials!</h2>
-      <button>Online Menu</button>
+    <section id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">This week's specials!</h2>
+      <button aria-label="Explore our full online menu">Online Menu</button>
       <div className="menu-items">
         {menuItems.map(item => (
-          <div key={item.name} className="menu-item">
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}<span>{item.price}</span></h3>
+          <article key={item.name} className="menu-item" aria-labelledby={`item-${item.name.replace(/\s+/g, '-').toLowerCase()}`}>
+            <img src={item.image} alt={`Photo of ${item.name}`} />
+            <h3 id={`item-${item.name.replace(/\s+/g, '-').toLowerCase()}`}>
+              {item.name}<span>{item.price}</span>
+            </h3>
             <p>{item.description}</p>
-            <a href="/order">Order a delivery</a>
-          </div>
+            <a href="/order" aria-label={`Order delivery for ${item.name}`}>Order a delivery</a>
+          </article>
         ))}
       </div>
     </section>
